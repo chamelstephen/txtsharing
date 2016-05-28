@@ -121,6 +121,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             storyboard = UIStoryboard(name: "Main_iphone4S", bundle: nil)
         } else {
             storyboard = UIStoryboard(name: "Main", bundle: nil)
+            print("iPhone5以降")
         }
         return storyboard
     }

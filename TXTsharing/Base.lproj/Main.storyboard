@@ -67,6 +67,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Subject" id="ATr-Ek-ZFP"/>
                     <navigationItem key="navigationItem" title="Subject" id="taa-Xm-oPg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="subjectcollectionview" destination="wA5-1a-m8e" id="Tmt-5g-V8W"/>
                     </connections>
@@ -107,6 +108,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Notification" id="Zfh-cm-VV4"/>
                     <navigationItem key="navigationItem" id="UfC-Og-woB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dal-s7-nJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,6 +140,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="a5c-ws-f1Y"/>
                     <navigationItem key="navigationItem" title="Home" id="hD2-i0-lBT"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="profileimage" destination="aNb-YL-aVe" id="h5W-jg-h2T"/>
                     </connections>
@@ -167,7 +170,6 @@
         <scene sceneID="asw-k3-90s">
             <objects>
                 <tabBarController id="UQc-SB-25H" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="UWO-mi-Fdv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
