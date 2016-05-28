@@ -69,8 +69,14 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
         let cell: UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("SubjectCell", forIndexPath: indexPath)
         
         let titlelabel: UILabel! = cell.viewWithTag(1) as! UILabel
-        titlelabel.text = String(indexPath.row)
-        cell.backgroundColor = UIColor.whiteColor()
+        titlelabel.text? = String(indexPath.row)
+        cell.backgroundColor? = UIColor.whiteColor()
+        
+        cell.layer.borderWidth = 0.1
+        cell.layer.masksToBounds = false
+        cell.layer.borderColor = UIColor.blackColor().CGColor
+        cell.layer.cornerRadius = cell.frame.height/2
+        cell.clipsToBounds = true
         
         return cell
     }

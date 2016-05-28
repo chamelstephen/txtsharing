@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet var profileimage: UIImageView!
     var namestring: String = ""
+    @IBOutlet var nameLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,13 +21,14 @@ class HomeViewController: UIViewController {
         
         self.navigationItem.title = "Home"
         
-        profileimage.layer.borderWidth = 1
+        profileimage.layer.borderWidth = 0.1
         profileimage.layer.masksToBounds = false
         profileimage.layer.borderColor = UIColor.blackColor().CGColor
         profileimage.layer.cornerRadius = profileimage.frame.height/2
         profileimage.clipsToBounds = true
         
         namestring = "name"
+        nameLabel.text = namestring
     }
 
     override func didReceiveMemoryWarning() {
