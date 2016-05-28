@@ -17,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let storyboard: UIStoryboard = self.grabStoryboard()
+        if let window = window {
+            window.rootViewController = storyboard.instantiateInitialViewController()!
+        }
+        //wrote from my fear that something might happen wrong
         return true
     }
 
@@ -105,6 +111,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 abort()
             }
         }
+    }
+    
+    func grabStoryboard() -> UIStoryboard {
+        var storyboard = UIStoryboard()
+        let height = UIScreen.mainScreen().bounds.size.height
+        
+        if height == 480 {
+            storyboard = UIStoryboard(name: "Main_iphone4S", bundle: nil)
+        } else {
+            storyboard = UIStoryboard(name: "Main", bundle: nil)
+        }
+        return storyboard
     }
 
 }

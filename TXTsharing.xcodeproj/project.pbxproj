@@ -15,6 +15,15 @@
 		D76EF1621CF986EC004C86B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76EF1601CF986EC004C86B3 /* LaunchScreen.storyboard */; };
 		D76EF16D1CF986EC004C86B3 /* TXTsharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF16C1CF986EC004C86B3 /* TXTsharingTests.swift */; };
 		D76EF1781CF986ED004C86B3 /* TXTsharingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF1771CF986ED004C86B3 /* TXTsharingUITests.swift */; };
+		D7F3C4AA1CF9A3B300FE28D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F3C4A91CF9A3B300FE28D0 /* HomeViewController.swift */; };
+		D7F3C4AD1CF9A79800FE28D0 /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */; };
+		D7F3C4AE1CF9A79800FE28D0 /* SubjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F3C4AC1CF9A79800FE28D0 /* SubjectViewController.xib */; };
+		D7F3C4B11CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F3C4AF1CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift */; };
+		D7F3C4B21CF9A7C400FE28D0 /* SubjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F3C4B01CF9A7C400FE28D0 /* SubjectCollectionViewCell.xib */; };
+		D7F3C4B71CF9B87400FE28D0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F3C4B41CF9B87400FE28D0 /* Default-568h@2x.png */; };
+		D7F3C4B81CF9B87400FE28D0 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F3C4B51CF9B87400FE28D0 /* Default-667h@2x.png */; };
+		D7F3C4B91CF9B87400FE28D0 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F3C4B61CF9B87400FE28D0 /* Default-736h@3x.png */; };
+		D7F3C4BB1CF9B90300FE28D0 /* Main_iphone4S.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F3C4BA1CF9B90300FE28D0 /* Main_iphone4S.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		D76EF1731CF986ED004C86B3 /* TXTsharingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXTsharingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76EF1771CF986ED004C86B3 /* TXTsharingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTsharingUITests.swift; sourceTree = "<group>"; };
 		D76EF1791CF986ED004C86B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7F3C4A91CF9A3B300FE28D0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
+		D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
+		D7F3C4AC1CF9A79800FE28D0 /* SubjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubjectViewController.xib; sourceTree = "<group>"; };
+		D7F3C4AF1CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectCollectionViewCell.swift; sourceTree = "<group>"; };
+		D7F3C4B01CF9A7C400FE28D0 /* SubjectCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubjectCollectionViewCell.xib; sourceTree = "<group>"; };
+		D7F3C4B41CF9B87400FE28D0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D7F3C4B51CF9B87400FE28D0 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		D7F3C4B61CF9B87400FE28D0 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		D7F3C4BA1CF9B90300FE28D0 /* Main_iphone4S.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_iphone4S.storyboard; path = ../Main_iphone4S.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +101,7 @@
 				D76EF16B1CF986EC004C86B3 /* TXTsharingTests */,
 				D76EF1761CF986ED004C86B3 /* TXTsharingUITests */,
 				D76EF1521CF986EC004C86B3 /* Products */,
+				D7F3C4B31CF9B87400FE28D0 /* Defaults */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +119,14 @@
 			isa = PBXGroup;
 			children = (
 				D76EF1541CF986EC004C86B3 /* AppDelegate.swift */,
+				D7F3C4A91CF9A3B300FE28D0 /* HomeViewController.swift */,
+				D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */,
+				D7F3C4AF1CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift */,
 				D76EF1561CF986EC004C86B3 /* ViewController.swift */,
+				D7F3C4BA1CF9B90300FE28D0 /* Main_iphone4S.storyboard */,
 				D76EF1581CF986EC004C86B3 /* Main.storyboard */,
+				D7F3C4AC1CF9A79800FE28D0 /* SubjectViewController.xib */,
+				D7F3C4B01CF9A7C400FE28D0 /* SubjectCollectionViewCell.xib */,
 				D76EF15E1CF986EC004C86B3 /* Assets.xcassets */,
 				D76EF1601CF986EC004C86B3 /* LaunchScreen.storyboard */,
 				D76EF1631CF986EC004C86B3 /* Info.plist */,
@@ -126,6 +151,16 @@
 				D76EF1791CF986ED004C86B3 /* Info.plist */,
 			);
 			path = TXTsharingUITests;
+			sourceTree = "<group>";
+		};
+		D7F3C4B31CF9B87400FE28D0 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				D7F3C4B41CF9B87400FE28D0 /* Default-568h@2x.png */,
+				D7F3C4B51CF9B87400FE28D0 /* Default-667h@2x.png */,
+				D7F3C4B61CF9B87400FE28D0 /* Default-736h@3x.png */,
+			);
+			path = Defaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +271,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76EF1621CF986EC004C86B3 /* LaunchScreen.storyboard in Resources */,
+				D7F3C4AE1CF9A79800FE28D0 /* SubjectViewController.xib in Resources */,
+				D7F3C4B81CF9B87400FE28D0 /* Default-667h@2x.png in Resources */,
+				D7F3C4B91CF9B87400FE28D0 /* Default-736h@3x.png in Resources */,
 				D76EF15F1CF986EC004C86B3 /* Assets.xcassets in Resources */,
 				D76EF15A1CF986EC004C86B3 /* Main.storyboard in Resources */,
+				D7F3C4B21CF9A7C400FE28D0 /* SubjectCollectionViewCell.xib in Resources */,
+				D7F3C4BB1CF9B90300FE28D0 /* Main_iphone4S.storyboard in Resources */,
+				D7F3C4B71CF9B87400FE28D0 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +305,10 @@
 			files = (
 				D76EF15D1CF986EC004C86B3 /* TXTsharing.xcdatamodeld in Sources */,
 				D76EF1571CF986EC004C86B3 /* ViewController.swift in Sources */,
+				D7F3C4B11CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift in Sources */,
+				D7F3C4AD1CF9A79800FE28D0 /* SubjectViewController.swift in Sources */,
 				D76EF1551CF986EC004C86B3 /* AppDelegate.swift in Sources */,
+				D7F3C4AA1CF9A3B300FE28D0 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +452,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TXTsharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -419,6 +464,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TXTsharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -489,6 +535,7 @@
 				D76EF17E1CF986ED004C86B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D76EF17F1CF986ED004C86B3 /* Build configuration list for PBXNativeTarget "TXTsharingTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +544,7 @@
 				D76EF1811CF986ED004C86B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D76EF1821CF986ED004C86B3 /* Build configuration list for PBXNativeTarget "TXTsharingUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +553,7 @@
 				D76EF1841CF986ED004C86B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
