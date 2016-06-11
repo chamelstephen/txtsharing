@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D70AFC2D1D0C292D00F480B4 /* TakeALookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70AFC2C1D0C292D00F480B4 /* TakeALookViewController.swift */; };
+		D70AFC331D0C2E2D00F480B4 /* img_mountain.png in Resources */ = {isa = PBXBuildFile; fileRef = D70AFC321D0C2E2D00F480B4 /* img_mountain.png */; };
 		D76EF1551CF986EC004C86B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF1541CF986EC004C86B3 /* AppDelegate.swift */; };
 		D76EF1571CF986EC004C86B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF1561CF986EC004C86B3 /* ViewController.swift */; };
 		D76EF15A1CF986EC004C86B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76EF1581CF986EC004C86B3 /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D70AFC2C1D0C292D00F480B4 /* TakeALookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeALookViewController.swift; sourceTree = "<group>"; };
+		D70AFC321D0C2E2D00F480B4 /* img_mountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_mountain.png; sourceTree = "<group>"; };
 		D76EF1511CF986EC004C86B3 /* TXTsharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TXTsharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76EF1541CF986EC004C86B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D76EF1561CF986EC004C86B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,10 +122,12 @@
 		D76EF1531CF986EC004C86B3 /* TXTsharing */ = {
 			isa = PBXGroup;
 			children = (
+				D70AFC321D0C2E2D00F480B4 /* img_mountain.png */,
 				D76EF1541CF986EC004C86B3 /* AppDelegate.swift */,
 				D7F3C4A91CF9A3B300FE28D0 /* HomeViewController.swift */,
 				D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */,
 				D7F3C4AF1CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift */,
+				D70AFC2C1D0C292D00F480B4 /* TakeALookViewController.swift */,
 				D76EF1561CF986EC004C86B3 /* ViewController.swift */,
 				D76EF1581CF986EC004C86B3 /* Main.storyboard */,
 				D7F3C4AC1CF9A79800FE28D0 /* SubjectViewController.xib */,
@@ -270,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D70AFC331D0C2E2D00F480B4 /* img_mountain.png in Resources */,
 				D7F3C4BD1CF9D85B00FE28D0 /* Main_iPhone4S.storyboard in Resources */,
 				D76EF1621CF986EC004C86B3 /* LaunchScreen.storyboard in Resources */,
 				D7F3C4AE1CF9A79800FE28D0 /* SubjectViewController.xib in Resources */,
@@ -308,6 +315,7 @@
 				D7F3C4B11CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift in Sources */,
 				D7F3C4AD1CF9A79800FE28D0 /* SubjectViewController.swift in Sources */,
 				D76EF1551CF986EC004C86B3 /* AppDelegate.swift in Sources */,
+				D70AFC2D1D0C292D00F480B4 /* TakeALookViewController.swift in Sources */,
 				D7F3C4AA1CF9A3B300FE28D0 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
