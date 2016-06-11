@@ -68,20 +68,39 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         let cell: UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("SubjectCell", forIndexPath: indexPath)
         
-        let titlelabel: UILabel! = cell.viewWithTag(1) as! UILabel
-        titlelabel.text? = String(indexPath.row)
         cell.backgroundColor? = UIColor.whiteColor()
+        cell.layer.borderColor = UIColor.whiteColor().CGColor
         
+        /*
         cell.layer.borderWidth = 0.1
         cell.layer.masksToBounds = false
         cell.layer.borderColor = UIColor.blackColor().CGColor
         cell.layer.cornerRadius = cell.frame.height/2
         cell.clipsToBounds = true
+        */
+        
+        let titlelabel: UILabel! = cell.viewWithTag(1) as! UILabel
+        titlelabel.text? = String(indexPath.row)
+        
+        let titlebutton: UIButton! = cell.viewWithTag(2) as! UIButton
+        //titlebutton.title? = String(indexPath.row)
+        
+        titlebutton.layer.borderWidth = 0.1
+        titlebutton.layer.masksToBounds = false
+        titlebutton.layer.borderColor = UIColor.blackColor().CGColor
+        titlebutton.layer.cornerRadius = titlebutton.frame.height/2
+        titlebutton.clipsToBounds = true
+        
+        //let subjectimage: UIImage! = cell.viewWithTag(3) as! UIImage
         
         return cell
     }
     
     func searchButtonTapped() {
+        
+    }
+    
+    @IBAction func takealook(){
         
     }
 
