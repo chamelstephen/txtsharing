@@ -20,9 +20,7 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         self.navigationItem.title = "Subject"
         
-        let searchButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Search, target: self, action: "searchButtontapped:")
-        
-        //subjectcollectionview.registerClass(<#T##cellClass: AnyClass?##AnyClass?#>, forCellWithReuseIdentifier: "SubjectCell")
+        let searchButton: UIBarButtonItem! = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Search, target: self, action: "searchButtontapped:")
         
         subjectcollectionview.delegate = self
         subjectcollectionview.dataSource = self
@@ -51,6 +49,7 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
         print("選択されたcell: \(indexPath.row)")
+        print("oh, yes")
         
     }
     
@@ -66,25 +65,20 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
      */
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell: UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier("SubjectCell", forIndexPath: indexPath)
+        let cell: UICollectionViewCell! = collectionView.dequeueReusableCellWithReuseIdentifier("SubjectCell", forIndexPath: indexPath)
         
-        cell.backgroundColor? = UIColor.whiteColor()
-        cell.layer.borderColor = UIColor.whiteColor().CGColor
+        cell.backgroundColor? = UIColor.whiteColor()//whiten the background
+        cell.layer.borderColor? = UIColor.whiteColor().CGColor
         
-        /*
-        cell.layer.borderWidth = 0.1
-        cell.layer.masksToBounds = false
-        cell.layer.borderColor = UIColor.blackColor().CGColor
-        cell.layer.cornerRadius = cell.frame.height/2
-        cell.clipsToBounds = true
-        */
-        
-        let titlelabel: UILabel! = cell.viewWithTag(1) as! UILabel
+        let titlelabel: UILabel! = cell.viewWithTag(1) as! UILabel//create label
         titlelabel.text? = String(indexPath.row)
         
-        let titlebutton: UIButton! = cell.viewWithTag(2) as! UIButton
+        
+        
+        let titlebutton: UIButton! = cell.viewWithTag(2) as! UIButton//create button
         //titlebutton.title? = String(indexPath.row)
         
+        //button size and shape
         titlebutton.layer.borderWidth = 0.1
         titlebutton.layer.masksToBounds = false
         titlebutton.layer.borderColor = UIColor.blackColor().CGColor
@@ -92,6 +86,7 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
         titlebutton.clipsToBounds = true
         
         //let subjectimage: UIImage! = cell.viewWithTag(3) as! UIImage
+ 
         
         return cell
     }

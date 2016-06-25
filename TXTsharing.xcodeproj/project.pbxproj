@@ -17,6 +17,7 @@
 		D76EF1621CF986EC004C86B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76EF1601CF986EC004C86B3 /* LaunchScreen.storyboard */; };
 		D76EF16D1CF986EC004C86B3 /* TXTsharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF16C1CF986EC004C86B3 /* TXTsharingTests.swift */; };
 		D76EF1781CF986ED004C86B3 /* TXTsharingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF1771CF986ED004C86B3 /* TXTsharingUITests.swift */; };
+		D77E48A91D1E915B001A74D5 /* NoteBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E48A81D1E915B001A74D5 /* NoteBookViewController.swift */; };
 		D7F3C4AA1CF9A3B300FE28D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F3C4A91CF9A3B300FE28D0 /* HomeViewController.swift */; };
 		D7F3C4AD1CF9A79800FE28D0 /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */; };
 		D7F3C4AE1CF9A79800FE28D0 /* SubjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F3C4AC1CF9A79800FE28D0 /* SubjectViewController.xib */; };
@@ -62,6 +63,7 @@
 		D76EF1731CF986ED004C86B3 /* TXTsharingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXTsharingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76EF1771CF986ED004C86B3 /* TXTsharingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTsharingUITests.swift; sourceTree = "<group>"; };
 		D76EF1791CF986ED004C86B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D77E48A81D1E915B001A74D5 /* NoteBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteBookViewController.swift; path = ../NoteBookViewController.swift; sourceTree = "<group>"; };
 		D7F3C4A91CF9A3B300FE28D0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
 		D7F3C4AC1CF9A79800FE28D0 /* SubjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubjectViewController.xib; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */,
 				D7F3C4AF1CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift */,
 				D70AFC2C1D0C292D00F480B4 /* TakeALookViewController.swift */,
+				D77E48A81D1E915B001A74D5 /* NoteBookViewController.swift */,
 				D76EF1561CF986EC004C86B3 /* ViewController.swift */,
 				D76EF1581CF986EC004C86B3 /* Main.storyboard */,
 				D7F3C4AC1CF9A79800FE28D0 /* SubjectViewController.xib */,
@@ -317,6 +320,7 @@
 				D76EF1551CF986EC004C86B3 /* AppDelegate.swift in Sources */,
 				D70AFC2D1D0C292D00F480B4 /* TakeALookViewController.swift in Sources */,
 				D7F3C4AA1CF9A3B300FE28D0 /* HomeViewController.swift in Sources */,
+				D77E48A91D1E915B001A74D5 /* NoteBookViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
