@@ -1,17 +1,24 @@
 //
-//  SubjectViewController.swift
+//  SelectTermsViewController.swift
 //  TXTsharing
 //
-//  Created by kento on 2016/05/28.
+//  Created by kento on 2016/06/25.
 //  Copyright © 2016年 Kento Ohara. All rights reserved.
 //
 
 import UIKit
 
-class SubjectViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class SelectTermsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    private var transitioner: Transitioner?
     
-    @IBOutlet var subjectcollectionview: UICollectionView!
+    class func instantiate(point: CGPoint) -> SelectTermsNavigationViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())//add storyboards in case
+        let viewController = storyboard.instantiateViewControllerWithIdentifier("SelectTerms") as! SelectTermsNavigationViewController
+        viewController.transitioner = Transitioner(style: .CircularReveal(point), viewController: viewController)
+        return viewController
+    }
     
+    @IBOutlet var TermSelectCollectionView: UICollectionView!
     
     @IBOutlet var mybackgroundImage: UIImageView!
 
@@ -20,12 +27,12 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 
         // Do any additional setup after loading the view.
         
-        self.navigationItem.title = "Subject"
+        self.navigationItem.title = "Term"
         
         let searchButton: UIBarButtonItem! = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Search, target: self, action: "searchButtontapped:")
         
-        subjectcollectionview.delegate = self
-        subjectcollectionview.dataSource = self
+        TermSelectCollectionView.delegate = self
+        TermSelectCollectionView.dataSource = self
         
         //setting of the background effect
         
@@ -37,7 +44,6 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
         visualEffectView.frame = mybackgroundImage.bounds
         // 画像にエフェクトビューを貼り付ける
         mybackgroundImage.addSubview(visualEffectView)
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +61,13 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //extension SelectTermsViewController {
+        @IBAction func buttonTapped(sender: UIBarButtonItem) {
+            transitioner = Transitioner(style: .CircularReveal(sender.accessibilityActivationPoint), viewController: self)
+            dismissViewControllerAnimated(true, completion: nil)
+        }
+    //}
     
     /*
      Cellが選択された際に呼び出される
@@ -78,7 +91,7 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
      */
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-        let cell: UICollectionViewCell! = collectionView.dequeueReusableCellWithReuseIdentifier("SubjectCell", forIndexPath: indexPath)
+        let cell: UICollectionViewCell! = collectionView.dequeueReusableCellWithReuseIdentifier("TermCell", forIndexPath: indexPath)
         
         cell.backgroundColor? = UIColor.clearColor()//clear the background
         cell.layer.borderColor? = UIColor.clearColor().CGColor
@@ -105,10 +118,4 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
     func searchButtonTapped() {
         
     }
-    
-    @IBAction func takealook(sender: UIButton){
-        let viewController = SelectTermsNavigationViewController.instantiate(sender.center)
-        presentViewController(viewController, animated: true, completion: nil)
-    }
-
 }

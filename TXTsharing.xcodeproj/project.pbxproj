@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		D70AFC2D1D0C292D00F480B4 /* TakeALookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70AFC2C1D0C292D00F480B4 /* TakeALookViewController.swift */; };
 		D70AFC331D0C2E2D00F480B4 /* img_mountain.png in Resources */ = {isa = PBXBuildFile; fileRef = D70AFC321D0C2E2D00F480B4 /* img_mountain.png */; };
+		D720031D1D1EAB39008823D2 /* CircularRevealAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D720031B1D1EAB39008823D2 /* CircularRevealAnimator.swift */; };
+		D720031E1D1EAB39008823D2 /* Transitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D720031C1D1EAB39008823D2 /* Transitioner.swift */; };
+		D72003211D1EABE1008823D2 /* SelectTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72003201D1EABE1008823D2 /* SelectTermsViewController.swift */; };
+		D74B14F11D21626100D3A922 /* img_yari_summer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D74B14F01D21626100D3A922 /* img_yari_summer.jpg */; };
+		D74B14F31D21627700D3A922 /* 槍ヶ岳.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D74B14F21D21627700D3A922 /* 槍ヶ岳.jpg */; };
+		D74B14F51D21669000D3A922 /* SelectTermsNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B14F41D21669000D3A922 /* SelectTermsNavigationViewController.swift */; };
 		D76EF1551CF986EC004C86B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF1541CF986EC004C86B3 /* AppDelegate.swift */; };
 		D76EF1571CF986EC004C86B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF1561CF986EC004C86B3 /* ViewController.swift */; };
 		D76EF15A1CF986EC004C86B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76EF1581CF986EC004C86B3 /* Main.storyboard */; };
@@ -49,6 +55,12 @@
 /* Begin PBXFileReference section */
 		D70AFC2C1D0C292D00F480B4 /* TakeALookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeALookViewController.swift; sourceTree = "<group>"; };
 		D70AFC321D0C2E2D00F480B4 /* img_mountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_mountain.png; sourceTree = "<group>"; };
+		D720031B1D1EAB39008823D2 /* CircularRevealAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularRevealAnimator.swift; path = Defaults/CircularRevealAnimator.swift; sourceTree = "<group>"; };
+		D720031C1D1EAB39008823D2 /* Transitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transitioner.swift; path = Defaults/Transitioner.swift; sourceTree = "<group>"; };
+		D72003201D1EABE1008823D2 /* SelectTermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectTermsViewController.swift; path = ../SelectTermsViewController.swift; sourceTree = "<group>"; };
+		D74B14F01D21626100D3A922 /* img_yari_summer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = img_yari_summer.jpg; path = ../Defaults/img_yari_summer.jpg; sourceTree = "<group>"; };
+		D74B14F21D21627700D3A922 /* 槍ヶ岳.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "槍ヶ岳.jpg"; sourceTree = "<group>"; };
+		D74B14F41D21669000D3A922 /* SelectTermsNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectTermsNavigationViewController.swift; path = ../SelectTermsNavigationViewController.swift; sourceTree = "<group>"; };
 		D76EF1511CF986EC004C86B3 /* TXTsharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TXTsharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76EF1541CF986EC004C86B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D76EF1561CF986EC004C86B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,11 +112,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D720031F1D1EAB66008823D2 /* CircularRevealAnimatior */ = {
+			isa = PBXGroup;
+			children = (
+				D720031B1D1EAB39008823D2 /* CircularRevealAnimator.swift */,
+				D720031C1D1EAB39008823D2 /* Transitioner.swift */,
+				D76EF16B1CF986EC004C86B3 /* TXTsharingTests */,
+			);
+			name = CircularRevealAnimatior;
+			sourceTree = "<group>";
+		};
 		D76EF1481CF986EC004C86B3 = {
 			isa = PBXGroup;
 			children = (
 				D76EF1531CF986EC004C86B3 /* TXTsharing */,
-				D76EF16B1CF986EC004C86B3 /* TXTsharingTests */,
+				D720031F1D1EAB66008823D2 /* CircularRevealAnimatior */,
 				D76EF1761CF986ED004C86B3 /* TXTsharingUITests */,
 				D76EF1521CF986EC004C86B3 /* Products */,
 				D7F3C4B31CF9B87400FE28D0 /* Defaults */,
@@ -125,10 +147,13 @@
 			isa = PBXGroup;
 			children = (
 				D70AFC321D0C2E2D00F480B4 /* img_mountain.png */,
+				D74B14F01D21626100D3A922 /* img_yari_summer.jpg */,
 				D76EF1541CF986EC004C86B3 /* AppDelegate.swift */,
 				D7F3C4A91CF9A3B300FE28D0 /* HomeViewController.swift */,
 				D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */,
 				D7F3C4AF1CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift */,
+				D74B14F41D21669000D3A922 /* SelectTermsNavigationViewController.swift */,
+				D72003201D1EABE1008823D2 /* SelectTermsViewController.swift */,
 				D70AFC2C1D0C292D00F480B4 /* TakeALookViewController.swift */,
 				D77E48A81D1E915B001A74D5 /* NoteBookViewController.swift */,
 				D76EF1561CF986EC004C86B3 /* ViewController.swift */,
@@ -156,6 +181,7 @@
 		D76EF1761CF986ED004C86B3 /* TXTsharingUITests */ = {
 			isa = PBXGroup;
 			children = (
+				D74B14F21D21627700D3A922 /* 槍ヶ岳.jpg */,
 				D76EF1771CF986ED004C86B3 /* TXTsharingUITests.swift */,
 				D76EF1791CF986ED004C86B3 /* Info.plist */,
 			);
@@ -280,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D70AFC331D0C2E2D00F480B4 /* img_mountain.png in Resources */,
+				D74B14F11D21626100D3A922 /* img_yari_summer.jpg in Resources */,
 				D7F3C4BD1CF9D85B00FE28D0 /* Main_iPhone4S.storyboard in Resources */,
 				D76EF1621CF986EC004C86B3 /* LaunchScreen.storyboard in Resources */,
 				D7F3C4AE1CF9A79800FE28D0 /* SubjectViewController.xib in Resources */,
@@ -303,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74B14F31D21627700D3A922 /* 槍ヶ岳.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +344,10 @@
 				D76EF15D1CF986EC004C86B3 /* TXTsharing.xcdatamodeld in Sources */,
 				D76EF1571CF986EC004C86B3 /* ViewController.swift in Sources */,
 				D7F3C4B11CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift in Sources */,
+				D720031E1D1EAB39008823D2 /* Transitioner.swift in Sources */,
 				D7F3C4AD1CF9A79800FE28D0 /* SubjectViewController.swift in Sources */,
+				D72003211D1EABE1008823D2 /* SelectTermsViewController.swift in Sources */,
+				D720031D1D1EAB39008823D2 /* CircularRevealAnimator.swift in Sources */,
 				D76EF1551CF986EC004C86B3 /* AppDelegate.swift in Sources */,
 				D70AFC2D1D0C292D00F480B4 /* TakeALookViewController.swift in Sources */,
 				D7F3C4AA1CF9A3B300FE28D0 /* HomeViewController.swift in Sources */,
@@ -336,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74B14F51D21669000D3A922 /* SelectTermsNavigationViewController.swift in Sources */,
 				D76EF1781CF986ED004C86B3 /* TXTsharingUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
