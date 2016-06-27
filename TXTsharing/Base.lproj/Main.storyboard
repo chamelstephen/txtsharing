@@ -203,10 +203,10 @@
             </objects>
             <point key="canvasLocation" x="879" y="-1121"/>
         </scene>
-        <!--Select Terms Navigation View Controller-->
+        <!--Select Terms View Controller-->
         <scene sceneID="G4c-uH-aLI">
             <objects>
-                <navigationController storyboardIdentifier="SelectTerms" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Dx-WH-t3b" customClass="SelectTermsNavigationViewController" customModule="TXTsharingUITests" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SelectTerms" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Dx-WH-t3b" customClass="SelectTermsViewController" customModule="TXTsharing" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7yQ-Bq-tWW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -273,14 +273,14 @@
                     <navigationItem key="navigationItem" title="Term" id="7pv-az-0fm">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="7UG-2T-uNM">
                             <connections>
-                                <action selector="buttonTapped:" destination="oI2-cj-Hcg" id="me7-G4-YMd"/>
+                                <action selector="buttonTapped:" destination="oI2-cj-Hcg" id="1t7-IW-vvS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="TermSelectCollectionView" destination="CAY-QU-3bt" id="Tmm-hr-3Ux"/>
-                        <outlet property="mybackgroundImage" destination="2mX-53-9SB" id="FvL-8e-7f5"/>
+                        <outlet property="TermSelectCollectionView" destination="CAY-QU-3bt" id="y4F-4z-N6r"/>
+                        <outlet property="mybackgroundImage" destination="2mX-53-9SB" id="7ZE-nh-VCY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fq-sy-w7U" userLabel="First Responder" sceneMemberID="firstResponder"/>

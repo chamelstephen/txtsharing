@@ -8,12 +8,12 @@
 
 import UIKit
 
-class SelectTermsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class SelectTermsViewController: UINavigationController, UICollectionViewDelegate, UICollectionViewDataSource {
     private var transitioner: Transitioner?
     
-    class func instantiate(point: CGPoint) -> SelectTermsNavigationViewController {
+    class func instantiate(point: CGPoint) -> SelectTermsViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())//add storyboards in case
-        let viewController = storyboard.instantiateViewControllerWithIdentifier("SelectTerms") as! SelectTermsNavigationViewController
+        let viewController = storyboard.instantiateViewControllerWithIdentifier("SelectTerms") as! SelectTermsViewController
         viewController.transitioner = Transitioner(style: .CircularReveal(point), viewController: viewController)
         return viewController
     }
@@ -35,7 +35,6 @@ class SelectTermsViewController: UIViewController, UICollectionViewDelegate, UIC
         TermSelectCollectionView.dataSource = self
         
         //setting of the background effect
-        
         // ブラーエフェクトを生成（ここでエフェクトスタイルを指定する）
         let blurEffect = UIBlurEffect(style: .Light)
         // ブラーエフェクトからエフェクトビューを生成
