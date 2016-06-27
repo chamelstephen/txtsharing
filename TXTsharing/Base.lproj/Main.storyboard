@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img_mountain.png" translatesAutoresizingMaskIntoConstraints="NO" id="gvL-at-7IX">
-                                <rect key="frame" x="10" y="57" width="300" height="455"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wA5-1a-m8e">
                                 <rect key="frame" x="10" y="64" width="300" height="455"/>
@@ -59,7 +59,7 @@
                                                         <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="takealook:" destination="Ror-9O-MVB" eventType="touchUpInside" id="xcD-ei-Qjr"/>
+                                                        <action selector="takealook:" destination="Ror-9O-MVB" eventType="touchUpInside" id="b7Q-MX-m7C"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yeah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wop-um-Tji">
@@ -203,10 +203,10 @@
             </objects>
             <point key="canvasLocation" x="879" y="-1121"/>
         </scene>
-        <!--Select Terms View Controller-->
+        <!--Segueto Term Selecting View Controller-->
         <scene sceneID="G4c-uH-aLI">
             <objects>
-                <navigationController storyboardIdentifier="SelectTerms" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Dx-WH-t3b" customClass="SelectTermsViewController" customModule="TXTsharing" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SelectTerms" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Dx-WH-t3b" customClass="SeguetoTermSelectingViewController" customModule="TXTsharingUITests" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7yQ-Bq-tWW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -279,7 +279,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="TermSelectCollectionView" destination="CAY-QU-3bt" id="y4F-4z-N6r"/>
+                        <outlet property="TermSelectCollectionView" destination="CAY-QU-3bt" id="JtA-bR-bCO"/>
                         <outlet property="mybackgroundImage" destination="2mX-53-9SB" id="7ZE-nh-VCY"/>
                     </connections>
                 </viewController>

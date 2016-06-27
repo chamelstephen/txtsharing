@@ -107,7 +107,7 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     @IBAction func takealook(sender: UIButton){
-        let viewController = SelectTermsViewController.instantiate(sender.center)
+        let viewController = SeguetoTermSelectingViewController.instantiate(sender.center)
         presentViewController(viewController, animated: true, completion: nil)
     }
 

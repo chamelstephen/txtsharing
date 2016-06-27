@@ -8,15 +8,7 @@
 
 import UIKit
 
-class SelectTermsViewController: UINavigationController, UICollectionViewDelegate, UICollectionViewDataSource {
-    private var transitioner: Transitioner?
-    
-    class func instantiate(point: CGPoint) -> SelectTermsViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())//add storyboards in case
-        let viewController = storyboard.instantiateViewControllerWithIdentifier("SelectTerms") as! SelectTermsViewController
-        viewController.transitioner = Transitioner(style: .CircularReveal(point), viewController: viewController)
-        return viewController
-    }
+class SelectTermsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet var TermSelectCollectionView: UICollectionView!
     
@@ -61,12 +53,6 @@ class SelectTermsViewController: UINavigationController, UICollectionViewDelegat
     }
     */
     
-    //extension SelectTermsViewController {
-        @IBAction func buttonTapped(sender: UIBarButtonItem) {
-            transitioner = Transitioner(style: .CircularReveal(sender.accessibilityActivationPoint), viewController: self)
-            dismissViewControllerAnimated(true, completion: nil)
-        }
-    //}
     
     /*
      Cellが選択された際に呼び出される
