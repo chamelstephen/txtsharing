@@ -38,7 +38,8 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wA5-1a-m8e">
-                                <rect key="frame" x="10" y="64" width="300" height="455"/>
+                                <rect key="frame" x="10" y="79" width="300" height="440"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="4" id="Gqk-Mw-vgV">
                                     <size key="itemSize" width="90" height="108"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -71,6 +72,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -125,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOM-Kt-Gh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2162" y="-253"/>
+            <point key="canvasLocation" x="2149" y="-253"/>
         </scene>
         <!--Notification-->
         <scene sceneID="dBJ-hP-y4s">
@@ -229,7 +231,8 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CAY-QU-3bt">
-                                <rect key="frame" x="10" y="65" width="300" height="455"/>
+                                <rect key="frame" x="10" y="80" width="300" height="440"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="4" id="Nz8-jW-uxL">
                                     <size key="itemSize" width="90" height="108"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -259,6 +262,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -274,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fq-sy-w7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1581" y="-269"/>
+            <point key="canvasLocation" x="1336" y="-269"/>
         </scene>
         <!--Home-->
         <scene sceneID="BtD-Qv-kVp">

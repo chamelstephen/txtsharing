@@ -28,7 +28,6 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
         subjectcollectionview.dataSource = self
         
         //setting of the background effect
-        
         // ブラーエフェクトを生成（ここでエフェクトスタイルを指定する）
         let blurEffect = UIBlurEffect(style: .Light)
         // ブラーエフェクトからエフェクトビューを生成
