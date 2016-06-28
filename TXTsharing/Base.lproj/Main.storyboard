@@ -88,46 +88,45 @@
             </objects>
             <point key="canvasLocation" x="879" y="-269"/>
         </scene>
-        <!--TakeA Look View Controller-->
-        <scene sceneID="K8O-vE-4jy">
+        <!--Note-->
+        <scene sceneID="ch2-JD-D5A">
             <objects>
-                <viewController id="Hba-XX-k4B" customClass="TakeALookViewController" customModule="TXTsharing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0cN-MD-uJW" customClass="TakeALookViewController" customModule="TXTsharing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VCw-rI-3Bb"/>
-                        <viewControllerLayoutGuide type="bottom" id="n9c-6Q-1VO"/>
+                        <viewControllerLayoutGuide type="top" id="7ee-wU-ec4"/>
+                        <viewControllerLayoutGuide type="bottom" id="mTC-PB-gzw"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="sZi-ka-cQT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="BBW-5F-URz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fz8-QD-eS1">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Subject" id="8DO-JB-G28"/>
-                                </items>
-                            </navigationBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z0h-w0-MkA">
-                                <rect key="frame" x="0.0" y="64" width="320" height="141"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y1j-ZX-Jlw">
-                                <rect key="frame" x="0.0" y="213" width="320" height="355"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="buY-XA-38q">
+                                <rect key="frame" x="10" y="79" width="300" height="440"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ote-mU-hXq">
+                                        <rect key="frame" x="0.0" y="92" width="300" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ote-mU-hXq" id="8rB-Xw-FdG">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Note" id="AoU-YX-g4Z">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="lex-wy-q9M"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="myImageView" destination="z0h-w0-MkA" id="Mx0-a3-bBD"/>
-                        <outlet property="myNavigationBar" destination="fz8-QD-eS1" id="ujH-zF-x8Q"/>
-                        <outlet property="myNoteBook" destination="Y1j-ZX-Jlw" id="ST4-xm-I4v"/>
+                        <outlet property="myNoteTableView" destination="buY-XA-38q" id="gCf-vU-hsp"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TOM-Kt-Gh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gwn-WL-CQm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2149" y="-253"/>
+            <point key="canvasLocation" x="1792" y="-269"/>
         </scene>
         <!--Notification-->
         <scene sceneID="dBJ-hP-y4s">
@@ -231,7 +230,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CAY-QU-3bt">
-                                <rect key="frame" x="10" y="80" width="300" height="440"/>
+                                <rect key="frame" x="10" y="79" width="300" height="440"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="4" id="Nz8-jW-uxL">
                                     <size key="itemSize" width="90" height="108"/>
@@ -252,6 +251,9 @@
                                                     <state key="normal" title="image">
                                                         <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="0cN-MD-uJW" kind="push" id="MkU-wa-Ab6"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yeah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fM-ms-Ash">
                                                     <rect key="frame" x="27" y="93" width="37" height="15"/>

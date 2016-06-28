@@ -8,15 +8,15 @@
 
 import UIKit
 
-class TakeALookViewController: UIViewController {
+class TakeALookViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     
     let headerImage: UIImage! = UIImage(named: "img_mountain.png")//insert images by array in future
     @IBOutlet var myImageView: UIImageView!
     
-    @IBOutlet var myNavigationBar: UINavigationBar!
-    
     @IBOutlet var myNoteBook: UITextView!
+    
+    @IBOutlet var myNoteTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
