@@ -9,14 +9,17 @@
 import UIKit
 
 class SeguetoTermSelectingViewController: UINavigationController {
-    private var transitioner: CATransition?
+    /*
+    private var transitioner: Transition?
     
     class func instantiate(point: CGPoint) -> SeguetoTermSelectingViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())//add storyboards in case
         let viewController = storyboard.instantiateViewControllerWithIdentifier("SelectTerms") as! SeguetoTermSelectingViewController
-        viewController.transitioner = CATransition(style: .CircularReveal(point), viewController: viewController)
+        viewController.transitioner = Transition(style: .CircularReveal(point), viewController: viewController)
         return viewController
+ 
     }
+    */
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,13 +42,16 @@ class SeguetoTermSelectingViewController: UINavigationController {
         // Pass the selected object to the new view controller.
     }
     */
-    
+
+    /*
     //extension SelectTermsViewController {
     @IBAction func buttonTapped(sender: UIBarButtonItem) {
-        transitioner = CATransition(style: .CircularReveal(sender.accessibilityActivationPoint), viewController: self)
+        transitioner = Transition(style: .CircularReveal(sender.accessibilityActivationPoint), viewController: self)
         dismissViewControllerAnimated(true, completion: nil)
     }
     //}
+    */
+    //segue pending
 
 
 }

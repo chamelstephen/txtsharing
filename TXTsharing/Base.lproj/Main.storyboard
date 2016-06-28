@@ -59,7 +59,7 @@
                                                         <color key="titleColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="takealook:" destination="Ror-9O-MVB" eventType="touchUpInside" id="b7Q-MX-m7C"/>
+                                                        <segue destination="oI2-cj-Hcg" kind="push" id="S0u-Xx-zoi"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yeah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wop-um-Tji">
@@ -76,12 +76,10 @@
                             </collectionView>
                         </subviews>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Subject" id="ATr-Ek-ZFP"/>
                     <navigationItem key="navigationItem" title="Subject" id="taa-Xm-oPg"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="mybackgroundImage" destination="gvL-at-7IX" id="M7i-qq-Yph"/>
-                        <outlet property="subjectcollectionview" destination="wA5-1a-m8e" id="Tmt-5g-V8W"/>
+                        <outlet property="subjectcollectionview" destination="wA5-1a-m8e" id="KLW-Mf-gjQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DeZ-cP-ia5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -161,7 +159,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Notification" id="Zfh-cm-VV4"/>
                     <navigationItem key="navigationItem" id="UfC-Og-woB"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dal-s7-nJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -193,7 +190,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="a5c-ws-f1Y"/>
                     <navigationItem key="navigationItem" title="Home" id="hD2-i0-lBT"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="nameLabel" destination="vJv-fP-OVf" id="JtO-gu-3EB"/>
                         <outlet property="profileimage" destination="aNb-YL-aVe" id="h5W-jg-h2T"/>
@@ -207,19 +203,17 @@
         <scene sceneID="G4c-uH-aLI">
             <objects>
                 <navigationController storyboardIdentifier="SelectTerms" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Dx-WH-t3b" customClass="SeguetoTermSelectingViewController" customModule="TXTsharingUITests" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="U6k-LG-EWT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7yQ-Bq-tWW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="oI2-cj-Hcg" kind="relationship" relationship="rootViewController" id="JWR-AI-Jx9"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAi-JX-LdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1471" y="-926"/>
         </scene>
-        <!--Term-->
+        <!--Title-->
         <scene sceneID="vbg-BD-UEu">
             <objects>
                 <viewController id="oI2-cj-Hcg" customClass="SelectTermsViewController" customModule="TXTsharing" customModuleProvider="target" sceneMemberID="viewController">
@@ -270,16 +264,11 @@
                             </collectionView>
                         </subviews>
                     </view>
-                    <navigationItem key="navigationItem" title="Term" id="7pv-az-0fm">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="7UG-2T-uNM">
-                            <connections>
-                                <action selector="buttonTapped:" destination="oI2-cj-Hcg" id="1t7-IW-vvS"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="Title" id="NM0-ha-0ft">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="k2k-w2-GpK"/>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="TermSelectCollectionView" destination="CAY-QU-3bt" id="JtA-bR-bCO"/>
+                        <outlet property="TermSelectCollectionView" destination="CAY-QU-3bt" id="4zx-MG-6Kv"/>
                         <outlet property="mybackgroundImage" destination="2mX-53-9SB" id="7ZE-nh-VCY"/>
                     </connections>
                 </viewController>
@@ -308,6 +297,7 @@
         <scene sceneID="asw-k3-90s">
             <objects>
                 <tabBarController id="UQc-SB-25H" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="UWO-mi-Fdv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
