@@ -16,14 +16,12 @@
 		D74B14F31D21627700D3A922 /* 槍ヶ岳.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D74B14F21D21627700D3A922 /* 槍ヶ岳.jpg */; };
 		D74B14F71D21692600D3A922 /* SeguetoTermSelectingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74B14F61D21692600D3A922 /* SeguetoTermSelectingViewController.swift */; };
 		D76EF1551CF986EC004C86B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF1541CF986EC004C86B3 /* AppDelegate.swift */; };
-		D76EF1571CF986EC004C86B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF1561CF986EC004C86B3 /* ViewController.swift */; };
 		D76EF15A1CF986EC004C86B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76EF1581CF986EC004C86B3 /* Main.storyboard */; };
 		D76EF15D1CF986EC004C86B3 /* TXTsharing.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D76EF15B1CF986EC004C86B3 /* TXTsharing.xcdatamodeld */; };
 		D76EF15F1CF986EC004C86B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76EF15E1CF986EC004C86B3 /* Assets.xcassets */; };
 		D76EF1621CF986EC004C86B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76EF1601CF986EC004C86B3 /* LaunchScreen.storyboard */; };
 		D76EF16D1CF986EC004C86B3 /* TXTsharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF16C1CF986EC004C86B3 /* TXTsharingTests.swift */; };
 		D76EF1781CF986ED004C86B3 /* TXTsharingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF1771CF986ED004C86B3 /* TXTsharingUITests.swift */; };
-		D77E48A91D1E915B001A74D5 /* NoteBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77E48A81D1E915B001A74D5 /* NoteBookViewController.swift */; };
 		D7F3C4AA1CF9A3B300FE28D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F3C4A91CF9A3B300FE28D0 /* HomeViewController.swift */; };
 		D7F3C4AD1CF9A79800FE28D0 /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */; };
 		D7F3C4AE1CF9A79800FE28D0 /* SubjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F3C4AC1CF9A79800FE28D0 /* SubjectViewController.xib */; };
@@ -63,7 +61,6 @@
 		D74B14F61D21692600D3A922 /* SeguetoTermSelectingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SeguetoTermSelectingViewController.swift; path = ../SeguetoTermSelectingViewController.swift; sourceTree = "<group>"; };
 		D76EF1511CF986EC004C86B3 /* TXTsharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TXTsharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76EF1541CF986EC004C86B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D76EF1561CF986EC004C86B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D76EF1591CF986EC004C86B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D76EF15C1CF986EC004C86B3 /* TXTsharing.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TXTsharing.xcdatamodel; sourceTree = "<group>"; };
 		D76EF15E1CF986EC004C86B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,7 +72,6 @@
 		D76EF1731CF986ED004C86B3 /* TXTsharingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXTsharingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76EF1771CF986ED004C86B3 /* TXTsharingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTsharingUITests.swift; sourceTree = "<group>"; };
 		D76EF1791CF986ED004C86B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D77E48A81D1E915B001A74D5 /* NoteBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteBookViewController.swift; path = ../NoteBookViewController.swift; sourceTree = "<group>"; };
 		D7F3C4A91CF9A3B300FE28D0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
 		D7F3C4AC1CF9A79800FE28D0 /* SubjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubjectViewController.xib; sourceTree = "<group>"; };
@@ -117,7 +113,6 @@
 			children = (
 				D720031B1D1EAB39008823D2 /* CircularRevealAnimator.swift */,
 				D720031C1D1EAB39008823D2 /* Transitioner.swift */,
-				D76EF16B1CF986EC004C86B3 /* TXTsharingTests */,
 			);
 			name = CircularRevealAnimatior;
 			sourceTree = "<group>";
@@ -129,6 +124,7 @@
 				D720031F1D1EAB66008823D2 /* CircularRevealAnimatior */,
 				D76EF1761CF986ED004C86B3 /* TXTsharingUITests */,
 				D76EF1521CF986EC004C86B3 /* Products */,
+				D76EF16B1CF986EC004C86B3 /* TXTsharingTests */,
 				D7F3C4B31CF9B87400FE28D0 /* Defaults */,
 			);
 			sourceTree = "<group>";
@@ -155,8 +151,6 @@
 				D74B14F61D21692600D3A922 /* SeguetoTermSelectingViewController.swift */,
 				D72003201D1EABE1008823D2 /* SelectTermsViewController.swift */,
 				D70AFC2C1D0C292D00F480B4 /* TakeALookViewController.swift */,
-				D77E48A81D1E915B001A74D5 /* NoteBookViewController.swift */,
-				D76EF1561CF986EC004C86B3 /* ViewController.swift */,
 				D76EF1581CF986EC004C86B3 /* Main.storyboard */,
 				D7F3C4AC1CF9A79800FE28D0 /* SubjectViewController.xib */,
 				D7F3C4B01CF9A7C400FE28D0 /* SubjectCollectionViewCell.xib */,
@@ -176,7 +170,7 @@
 				D76EF16E1CF986EC004C86B3 /* Info.plist */,
 			);
 			path = TXTsharingTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		D76EF1761CF986ED004C86B3 /* TXTsharingUITests */ = {
 			isa = PBXGroup;
@@ -342,7 +336,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D76EF15D1CF986EC004C86B3 /* TXTsharing.xcdatamodeld in Sources */,
-				D76EF1571CF986EC004C86B3 /* ViewController.swift in Sources */,
 				D7F3C4B11CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift in Sources */,
 				D720031E1D1EAB39008823D2 /* Transitioner.swift in Sources */,
 				D7F3C4AD1CF9A79800FE28D0 /* SubjectViewController.swift in Sources */,
@@ -351,7 +344,6 @@
 				D76EF1551CF986EC004C86B3 /* AppDelegate.swift in Sources */,
 				D70AFC2D1D0C292D00F480B4 /* TakeALookViewController.swift in Sources */,
 				D7F3C4AA1CF9A3B300FE28D0 /* HomeViewController.swift in Sources */,
-				D77E48A91D1E915B001A74D5 /* NoteBookViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
