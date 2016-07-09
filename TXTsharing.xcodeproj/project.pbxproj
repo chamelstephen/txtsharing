@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		D70AFC2D1D0C292D00F480B4 /* TakeALookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70AFC2C1D0C292D00F480B4 /* TakeALookViewController.swift */; };
 		D70AFC331D0C2E2D00F480B4 /* img_mountain.png in Resources */ = {isa = PBXBuildFile; fileRef = D70AFC321D0C2E2D00F480B4 /* img_mountain.png */; };
+		D70F4A011D30D8AC0013195F /* mathematics.png in Resources */ = {isa = PBXBuildFile; fileRef = D70F49F91D30D8AC0013195F /* mathematics.png */; };
+		D70F4A021D30D8AC0013195F /* world_history.png in Resources */ = {isa = PBXBuildFile; fileRef = D70F49FA1D30D8AC0013195F /* world_history.png */; };
+		D70F4A031D30D8AC0013195F /* Japanese_language.png in Resources */ = {isa = PBXBuildFile; fileRef = D70F49FB1D30D8AC0013195F /* Japanese_language.png */; };
+		D70F4A041D30D8AC0013195F /* japanese_history.png in Resources */ = {isa = PBXBuildFile; fileRef = D70F49FC1D30D8AC0013195F /* japanese_history.png */; };
+		D70F4A051D30D8AC0013195F /* chemistry.png in Resources */ = {isa = PBXBuildFile; fileRef = D70F49FD1D30D8AC0013195F /* chemistry.png */; };
+		D70F4A061D30D8AC0013195F /* Biology.png in Resources */ = {isa = PBXBuildFile; fileRef = D70F49FE1D30D8AC0013195F /* Biology.png */; };
+		D70F4A071D30D8AC0013195F /* Kobun.png in Resources */ = {isa = PBXBuildFile; fileRef = D70F49FF1D30D8AC0013195F /* Kobun.png */; };
+		D70F4A081D30D8AC0013195F /* english_language.png in Resources */ = {isa = PBXBuildFile; fileRef = D70F4A001D30D8AC0013195F /* english_language.png */; };
 		D720031D1D1EAB39008823D2 /* CircularRevealAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D720031B1D1EAB39008823D2 /* CircularRevealAnimator.swift */; };
 		D720031E1D1EAB39008823D2 /* Transitioner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D720031C1D1EAB39008823D2 /* Transitioner.swift */; };
 		D72003211D1EABE1008823D2 /* SelectTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72003201D1EABE1008823D2 /* SelectTermsViewController.swift */; };
@@ -53,6 +61,14 @@
 /* Begin PBXFileReference section */
 		D70AFC2C1D0C292D00F480B4 /* TakeALookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeALookViewController.swift; sourceTree = "<group>"; };
 		D70AFC321D0C2E2D00F480B4 /* img_mountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_mountain.png; sourceTree = "<group>"; };
+		D70F49F91D30D8AC0013195F /* mathematics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mathematics.png; sourceTree = "<group>"; };
+		D70F49FA1D30D8AC0013195F /* world_history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = world_history.png; sourceTree = "<group>"; };
+		D70F49FB1D30D8AC0013195F /* Japanese_language.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Japanese_language.png; sourceTree = "<group>"; };
+		D70F49FC1D30D8AC0013195F /* japanese_history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = japanese_history.png; sourceTree = "<group>"; };
+		D70F49FD1D30D8AC0013195F /* chemistry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chemistry.png; sourceTree = "<group>"; };
+		D70F49FE1D30D8AC0013195F /* Biology.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Biology.png; sourceTree = "<group>"; };
+		D70F49FF1D30D8AC0013195F /* Kobun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kobun.png; sourceTree = "<group>"; };
+		D70F4A001D30D8AC0013195F /* english_language.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = english_language.png; sourceTree = "<group>"; };
 		D720031B1D1EAB39008823D2 /* CircularRevealAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularRevealAnimator.swift; path = Defaults/CircularRevealAnimator.swift; sourceTree = "<group>"; };
 		D720031C1D1EAB39008823D2 /* Transitioner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transitioner.swift; path = Defaults/Transitioner.swift; sourceTree = "<group>"; };
 		D72003201D1EABE1008823D2 /* SelectTermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectTermsViewController.swift; path = ../SelectTermsViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +136,14 @@
 		D76EF1481CF986EC004C86B3 = {
 			isa = PBXGroup;
 			children = (
+				D70F49F91D30D8AC0013195F /* mathematics.png */,
+				D70F49FA1D30D8AC0013195F /* world_history.png */,
+				D70F49FB1D30D8AC0013195F /* Japanese_language.png */,
+				D70F49FC1D30D8AC0013195F /* japanese_history.png */,
+				D70F49FD1D30D8AC0013195F /* chemistry.png */,
+				D70F49FE1D30D8AC0013195F /* Biology.png */,
+				D70F49FF1D30D8AC0013195F /* Kobun.png */,
+				D70F4A001D30D8AC0013195F /* english_language.png */,
 				D76EF1531CF986EC004C86B3 /* TXTsharing */,
 				D720031F1D1EAB66008823D2 /* CircularRevealAnimatior */,
 				D76EF1761CF986ED004C86B3 /* TXTsharingUITests */,
@@ -305,10 +329,18 @@
 				D76EF1621CF986EC004C86B3 /* LaunchScreen.storyboard in Resources */,
 				D7F3C4AE1CF9A79800FE28D0 /* SubjectViewController.xib in Resources */,
 				D7F3C4B81CF9B87400FE28D0 /* Default-667h@2x.png in Resources */,
+				D70F4A031D30D8AC0013195F /* Japanese_language.png in Resources */,
 				D7F3C4B91CF9B87400FE28D0 /* Default-736h@3x.png in Resources */,
+				D70F4A051D30D8AC0013195F /* chemistry.png in Resources */,
 				D76EF15F1CF986EC004C86B3 /* Assets.xcassets in Resources */,
+				D70F4A081D30D8AC0013195F /* english_language.png in Resources */,
 				D76EF15A1CF986EC004C86B3 /* Main.storyboard in Resources */,
+				D70F4A071D30D8AC0013195F /* Kobun.png in Resources */,
+				D70F4A061D30D8AC0013195F /* Biology.png in Resources */,
 				D7F3C4B21CF9A7C400FE28D0 /* SubjectCollectionViewCell.xib in Resources */,
+				D70F4A021D30D8AC0013195F /* world_history.png in Resources */,
+				D70F4A041D30D8AC0013195F /* japanese_history.png in Resources */,
+				D70F4A011D30D8AC0013195F /* mathematics.png in Resources */,
 				D7F3C4B71CF9B87400FE28D0 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

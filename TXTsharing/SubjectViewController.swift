@@ -12,8 +12,22 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     @IBOutlet var subjectcollectionview: UICollectionView!
     
-    
     @IBOutlet var mybackgroundImage: UIImageView!
+    
+    /*
+    let image1: UIImage! = UIImage(named: "mathematics.png")
+    let image2: UIImage! = UIImage(named: "english_language.png")
+    let image3: UIImage! = UIImage(named: "Japanese_language.png")
+    let image4: UIImage! = UIImage(named: "chemistry.png")
+    let image5: UIImage! = UIImage(named: "Biology.png")
+    let image6: UIImage! = UIImage(named: "world_history.png")
+    let image7: UIImage! = UIImage(named: "japanese_history.png")
+    let image8: UIImage! = UIImage(named: "Kobun.png")
+    */
+    
+    
+    let imageArray: [String] = ["mathematics.png", "english_language.png", "Japanese_language.png", "chemistry.png", "Biology.png", "world_history.png", "japanese_history.png", "Kobun.png"]
+    let destination: [String] = ["Math", "English", "Japanese", "Chemistry", "Biology", "World History", "Japanese History", "古文"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +43,7 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         //setting of the background effect
         // ブラーエフェクトを生成（ここでエフェクトスタイルを指定する）
-        let blurEffect = UIBlurEffect(style: .Light)
+        let blurEffect = UIBlurEffect(style: .ExtraLight)
         // ブラーエフェクトからエフェクトビューを生成
         let visualEffectView = UIVisualEffectView(effect: blurEffect)
         // エフェクトビューのサイズを指定（オリジナル画像と同じサイズにする）
@@ -69,7 +83,7 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
      Cellの総数を返す
      */
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return imageArray.count
     }
     
     /*
@@ -83,7 +97,7 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
         cell.layer.borderColor? = UIColor.clearColor().CGColor
         
         let titlelabel: UILabel! = cell.viewWithTag(1) as! UILabel//create label
-        titlelabel.text? = String(indexPath.row)
+        titlelabel.text? = destination[indexPath.row]
         
         
         
@@ -93,10 +107,20 @@ class SubjectViewController: UIViewController, UICollectionViewDelegate, UIColle
         //customize buttons' size and shape
         titlebutton.layer.borderWidth = 0.1
         titlebutton.layer.masksToBounds = false
-        titlebutton.layer.borderColor = UIColor.blackColor().CGColor
+        titlebutton.layer.borderColor = UIColor.clearColor().CGColor
         titlebutton.layer.cornerRadius = titlebutton.frame.height/2
         titlebutton.clipsToBounds = true
         
+        let iconimage: UIImageView! = cell.viewWithTag(3) as! UIImageView//create imageview
+        
+        iconimage.layer.borderWidth = 0.1
+        iconimage.layer.masksToBounds = false
+        iconimage.layer.borderColor = UIColor.clearColor().CGColor
+        iconimage.layer.cornerRadius = titlebutton.frame.height/2
+        iconimage.clipsToBounds = true
+        
+        let iconimageprepare: UIImage! = UIImage(named: "\(imageArray[indexPath.row])")
+        iconimage.image = iconimageprepare
         
         return cell
     }

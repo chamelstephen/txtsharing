@@ -13,6 +13,8 @@ class SelectTermsViewController: UIViewController, UICollectionViewDelegate, UIC
     @IBOutlet var TermSelectCollectionView: UICollectionView!
     
     @IBOutlet var mybackgroundImage: UIImageView!
+    
+    let termlableArray: [String] = ["First Midterm", "First Final", "Second Midterm", "Second Final", "Third Final"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +30,7 @@ class SelectTermsViewController: UIViewController, UICollectionViewDelegate, UIC
         
         //setting of the background effect
         // ブラーエフェクトを生成（ここでエフェクトスタイルを指定する）
-        let blurEffect = UIBlurEffect(style: .Light)
+        let blurEffect = UIBlurEffect(style: .ExtraLight)
         // ブラーエフェクトからエフェクトビューを生成
         let visualEffectView = UIVisualEffectView(effect: blurEffect)
         // エフェクトビューのサイズを指定（オリジナル画像と同じサイズにする）
@@ -68,7 +70,7 @@ class SelectTermsViewController: UIViewController, UICollectionViewDelegate, UIC
      Cellの総数を返す
      */
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return termlableArray.count
     }
     
     /*
@@ -82,8 +84,7 @@ class SelectTermsViewController: UIViewController, UICollectionViewDelegate, UIC
         cell.layer.borderColor? = UIColor.clearColor().CGColor
         
         let titlelabel: UILabel! = cell.viewWithTag(1) as! UILabel//create label
-        titlelabel.text? = String(indexPath.row)
-        
+        titlelabel.text? = termlableArray[indexPath.row]
         
         
         let titlebutton: UIButton! = cell.viewWithTag(2) as! UIButton//create button
@@ -92,9 +93,10 @@ class SelectTermsViewController: UIViewController, UICollectionViewDelegate, UIC
         //customize buttons' size and shape
         titlebutton.layer.borderWidth = 0.1
         titlebutton.layer.masksToBounds = false
-        titlebutton.layer.borderColor = UIColor.blackColor().CGColor
+        titlebutton.layer.borderColor = UIColor.clearColor().CGColor
         titlebutton.layer.cornerRadius = titlebutton.frame.height/2
         titlebutton.clipsToBounds = true
+        titlebutton.setTitle("\(termlableArray[indexPath.row])", forState: .Normal)
         
         
         return cell
