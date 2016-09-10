@@ -30,13 +30,11 @@
 		D76EF1621CF986EC004C86B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76EF1601CF986EC004C86B3 /* LaunchScreen.storyboard */; };
 		D76EF16D1CF986EC004C86B3 /* TXTsharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF16C1CF986EC004C86B3 /* TXTsharingTests.swift */; };
 		D76EF1781CF986ED004C86B3 /* TXTsharingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76EF1771CF986ED004C86B3 /* TXTsharingUITests.swift */; };
-		D7B2173E1D8413000021475D /* SubjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B2173D1D8413000021475D /* SubjectViewController.xib */; };
-		D7B217411D84133C0021475D /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B2173F1D84133C0021475D /* NotificationTableViewController.swift */; };
-		D7B217421D84133C0021475D /* NotificationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B217401D84133C0021475D /* NotificationTableViewController.xib */; };
+		D7CF9B7C1D841AE0001C3970 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CF9B7B1D841AE0001C3970 /* NotificationTableViewController.swift */; };
+		D7CF9B7F1D841B3F001C3970 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CF9B7D1D841B3F001C3970 /* NotificationTableViewCell.swift */; };
+		D7CF9B801D841B3F001C3970 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7CF9B7E1D841B3F001C3970 /* NotificationTableViewCell.xib */; };
 		D7F3C4AA1CF9A3B300FE28D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F3C4A91CF9A3B300FE28D0 /* HomeViewController.swift */; };
 		D7F3C4AD1CF9A79800FE28D0 /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */; };
-		D7F3C4B11CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F3C4AF1CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift */; };
-		D7F3C4B21CF9A7C400FE28D0 /* SubjectCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F3C4B01CF9A7C400FE28D0 /* SubjectCollectionViewCell.xib */; };
 		D7F3C4B71CF9B87400FE28D0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F3C4B41CF9B87400FE28D0 /* Default-568h@2x.png */; };
 		D7F3C4B81CF9B87400FE28D0 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F3C4B51CF9B87400FE28D0 /* Default-667h@2x.png */; };
 		D7F3C4B91CF9B87400FE28D0 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7F3C4B61CF9B87400FE28D0 /* Default-736h@3x.png */; };
@@ -90,13 +88,11 @@
 		D76EF1731CF986ED004C86B3 /* TXTsharingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXTsharingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76EF1771CF986ED004C86B3 /* TXTsharingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TXTsharingUITests.swift; sourceTree = "<group>"; };
 		D76EF1791CF986ED004C86B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7B2173D1D8413000021475D /* SubjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubjectViewController.xib; sourceTree = "<group>"; };
-		D7B2173F1D84133C0021475D /* NotificationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
-		D7B217401D84133C0021475D /* NotificationTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationTableViewController.xib; sourceTree = "<group>"; };
+		D7CF9B7B1D841AE0001C3970 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
+		D7CF9B7D1D841B3F001C3970 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		D7CF9B7E1D841B3F001C3970 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		D7F3C4A91CF9A3B300FE28D0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
-		D7F3C4AF1CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubjectCollectionViewCell.swift; sourceTree = "<group>"; };
-		D7F3C4B01CF9A7C400FE28D0 /* SubjectCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubjectCollectionViewCell.xib; sourceTree = "<group>"; };
 		D7F3C4B41CF9B87400FE28D0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D7F3C4B51CF9B87400FE28D0 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		D7F3C4B61CF9B87400FE28D0 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
@@ -167,16 +163,14 @@
 				D74B14F01D21626100D3A922 /* img_yari_summer.jpg */,
 				D76EF1541CF986EC004C86B3 /* AppDelegate.swift */,
 				D7F3C4A91CF9A3B300FE28D0 /* HomeViewController.swift */,
+				D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */,
 				D74B14F61D21692600D3A922 /* SeguetoTermSelectingViewController.swift */,
 				D72003201D1EABE1008823D2 /* SelectTermsViewController.swift */,
 				D70AFC2C1D0C292D00F480B4 /* TakeALookViewController.swift */,
+				D7CF9B7B1D841AE0001C3970 /* NotificationTableViewController.swift */,
 				D76EF1581CF986EC004C86B3 /* Main.storyboard */,
-				D7F3C4AB1CF9A79800FE28D0 /* SubjectViewController.swift */,
-				D7B2173D1D8413000021475D /* SubjectViewController.xib */,
-				D7F3C4AF1CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift */,
-				D7F3C4B01CF9A7C400FE28D0 /* SubjectCollectionViewCell.xib */,
-				D7B2173F1D84133C0021475D /* NotificationTableViewController.swift */,
-				D7B217401D84133C0021475D /* NotificationTableViewController.xib */,
+				D7CF9B7D1D841B3F001C3970 /* NotificationTableViewCell.swift */,
+				D7CF9B7E1D841B3F001C3970 /* NotificationTableViewCell.xib */,
 				D76EF15E1CF986EC004C86B3 /* Assets.xcassets */,
 				D76EF1601CF986EC004C86B3 /* LaunchScreen.storyboard */,
 				D76EF1631CF986EC004C86B3 /* Info.plist */,
@@ -343,20 +337,18 @@
 				D76EF1621CF986EC004C86B3 /* LaunchScreen.storyboard in Resources */,
 				D7F3C4B81CF9B87400FE28D0 /* Default-667h@2x.png in Resources */,
 				D70F4A031D30D8AC0013195F /* Japanese_language.png in Resources */,
-				D7B217421D84133C0021475D /* NotificationTableViewController.xib in Resources */,
 				D7F3C4B91CF9B87400FE28D0 /* Default-736h@3x.png in Resources */,
 				D70F4A051D30D8AC0013195F /* chemistry.png in Resources */,
+				D7CF9B801D841B3F001C3970 /* NotificationTableViewCell.xib in Resources */,
 				D76EF15F1CF986EC004C86B3 /* Assets.xcassets in Resources */,
 				D70F4A081D30D8AC0013195F /* english_language.png in Resources */,
 				D76EF15A1CF986EC004C86B3 /* Main.storyboard in Resources */,
 				D70F4A071D30D8AC0013195F /* Kobun.png in Resources */,
 				D70F4A061D30D8AC0013195F /* Biology.png in Resources */,
-				D7F3C4B21CF9A7C400FE28D0 /* SubjectCollectionViewCell.xib in Resources */,
 				D70F4A021D30D8AC0013195F /* world_history.png in Resources */,
 				D70F4A041D30D8AC0013195F /* japanese_history.png in Resources */,
 				D70F4A011D30D8AC0013195F /* mathematics.png in Resources */,
 				D7F3C4B71CF9B87400FE28D0 /* Default-568h@2x.png in Resources */,
-				D7B2173E1D8413000021475D /* SubjectViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,13 +374,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7B217411D84133C0021475D /* NotificationTableViewController.swift in Sources */,
+				D7CF9B7C1D841AE0001C3970 /* NotificationTableViewController.swift in Sources */,
 				D76EF15D1CF986EC004C86B3 /* TXTsharing.xcdatamodeld in Sources */,
-				D7F3C4B11CF9A7C400FE28D0 /* SubjectCollectionViewCell.swift in Sources */,
 				D720031E1D1EAB39008823D2 /* Transitioner.swift in Sources */,
 				D7F3C4AD1CF9A79800FE28D0 /* SubjectViewController.swift in Sources */,
 				D72003211D1EABE1008823D2 /* SelectTermsViewController.swift in Sources */,
 				D720031D1D1EAB39008823D2 /* CircularRevealAnimator.swift in Sources */,
+				D7CF9B7F1D841B3F001C3970 /* NotificationTableViewCell.swift in Sources */,
 				D76EF1551CF986EC004C86B3 /* AppDelegate.swift in Sources */,
 				D70AFC2D1D0C292D00F480B4 /* TakeALookViewController.swift in Sources */,
 				D7F3C4AA1CF9A3B300FE28D0 /* HomeViewController.swift in Sources */,
