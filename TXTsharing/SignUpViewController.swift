@@ -50,7 +50,29 @@ class SignUpViewController: UIViewController {
             
             return
             
+    }
+    /*
+    @IBAction func signUpBtn(sender: UIButton) {
+        // キーボードを閉じる
+        closeKeyboad()
+        
+        // 入力確認
+        if self.userNameTextField.text!.isEmpty || self.passwordTextField.text!.isEmpty || self.passwordTextField_second.text!.isEmpty {
+            self.errorLabel.text = "未入力の項目があります"
+            // TextFieldを空に
+            self.cleanTextField()
+            
+            return
+            
+        } else if passwordTextField.text! != passwordTextField_second.text! {
+            self.errorLabel.text = "Passwordが一致しません"
+            // TextFieldを空に
+            self.cleanTextField()
+            
+            return
+            
         }
+ */
         
         //NCMBUserのインスタンスを作成
         let user = NCMBUser()
@@ -85,6 +107,12 @@ class SignUpViewController: UIViewController {
         self.view.endEditing(true)
         
     }
+    /*
+    @IBAction func tapScreen(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+        
+    }
+    */
     
     // TextFieldを空にする
     func cleanTextField(){

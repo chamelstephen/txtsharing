@@ -32,7 +32,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0gB-nR-9lC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bIf-tJ-9qh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gvL-at-7IX">
@@ -106,7 +106,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mTC-PB-gzw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BBW-5F-URz">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="buY-XA-38q">
@@ -171,7 +171,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yR2-78-uQ8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7GY-aQ-15c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JQR-ri-MvR">
@@ -208,7 +208,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Kcf-VD-0zu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BrS-CO-FIJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yl4-iS-4V8">
@@ -246,6 +246,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginBtn:" destination="RkE-Xv-3cY" eventType="touchUpInside" id="1Tg-zG-KXH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auE-dn-hmM">
                                 <frame key="frameInset" minX="126" minY="273" width="68" height="30"/>
@@ -254,6 +257,9 @@
                                 <state key="normal" title="Sign up">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="toSignUp:" destination="RkE-Xv-3cY" eventType="touchUpInside" id="n0g-kc-koJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hj-1a-7hl">
                                 <frame key="frameInset" minX="16" minY="311" width="288" height="30"/>
@@ -270,12 +276,16 @@
                         <outlet property="errorLabel" destination="4hj-1a-7hl" id="PPV-4T-Piy"/>
                         <outlet property="passwordTextField" destination="Ive-TW-s60" id="7Dg-cU-aCT"/>
                         <outlet property="userNameTextField" destination="yl4-iS-4V8" id="aq2-WP-uij"/>
-                        <segue destination="qAt-ey-wgW" kind="push" identifier="LoginToSignUp" id="qKO-KU-QQR"/>
-                        <segue destination="imq-JE-pN6" kind="modal" id="ohP-7X-NV0"/>
+                        <segue destination="qAt-ey-wgW" kind="push" identifier="loginToSignUp" id="qKO-KU-QQR"/>
+                        <segue destination="imq-JE-pN6" kind="push" identifier="login" id="ohP-7X-NV0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QlY-eR-7D7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Y41-Lu-GM0"/>
+                <tapGestureRecognizer id="Y41-Lu-GM0">
+                    <connections>
+                        <action selector="tapScreen:" destination="RkE-Xv-3cY" id="UmA-sK-kIM"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1100.625" y="-1093.3098591549297"/>
         </scene>
@@ -288,7 +298,7 @@
                         <viewControllerLayoutGuide type="bottom" id="YaN-dF-PwI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tbr-pS-ukM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQG-1J-YvP">
@@ -341,7 +351,7 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="signUpBtnWithSender:" destination="qAt-ey-wgW" eventType="touchUpInside" id="9LV-bn-0pU"/>
+                                    <action selector="signUpBtn:" destination="qAt-ey-wgW" eventType="touchUpInside" id="vgN-IW-ckD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64F-92-VL8">
@@ -360,13 +370,13 @@
                         <outlet property="passwordTextField" destination="ezT-jp-F7U" id="s8p-oM-S4o"/>
                         <outlet property="passwordTextField_second" destination="Ura-Tw-ZwK" id="2uR-9b-nkz"/>
                         <outlet property="userNameTextField" destination="gc5-pj-z9I" id="iky-44-VfP"/>
-                        <segue destination="imq-JE-pN6" kind="modal" identifier="signUp" id="e7g-Bs-mCF"/>
+                        <segue destination="imq-JE-pN6" kind="push" identifier="signUp" id="e7g-Bs-mCF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GkY-eV-enl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="sfC-3m-zWq">
                     <connections>
-                        <action selector="tapScreenWithSender:" destination="qAt-ey-wgW" id="cXU-ip-jlb"/>
+                        <action selector="tapScreen:" destination="qAt-ey-wgW" id="Vzn-Ps-ZTA"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -381,32 +391,31 @@
                         <viewControllerLayoutGuide type="bottom" id="LIO-GC-OGY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TFO-5v-7ff">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="aNb-YL-aVe">
-                                <frame key="frameInset" minX="96" minY="84" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.2292549599" blue="0.1022405143" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJv-fP-OVf">
-                                <frame key="frameInset" minY="220" width="320" height="35"/>
+                                <frame key="frameInset" minX="27" minY="220" width="320" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2V-gd-6zD">
-                                <frame key="frameInset" minX="116" minY="269" width="88" height="30"/>
+                                <frame key="frameInset" minX="143" minY="263" width="88" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="logoutBtnWithSender:" destination="imq-JE-pN6" eventType="touchUpInside" id="8oP-WD-Yac"/>
+                                    <action selector="logoutBtn:" destination="imq-JE-pN6" eventType="touchUpInside" id="C2H-El-G4m"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="aNb-YL-aVe">
+                                <frame key="frameInset" minX="123" minY="84" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="a5c-ws-f1Y"/>
@@ -418,7 +427,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0q-tg-SQo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2531.25" y="-1091.1971830985915"/>
+            <point key="canvasLocation" x="1489" y="-1818"/>
         </scene>
         <!--Segueto Term Selecting View Controller-->
         <scene sceneID="G4c-uH-aLI">
@@ -443,7 +452,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dwF-5P-3Jc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IpQ-Oy-v37">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2mX-53-9SB">
@@ -554,7 +563,7 @@
         <image name="Default.png" width="320" height="568"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ohP-7X-NV0"/>
+        <segue reference="e7g-Bs-mCF"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
 </document>

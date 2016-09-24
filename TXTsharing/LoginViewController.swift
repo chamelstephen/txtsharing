@@ -39,8 +39,23 @@ class LoginViewController: UIViewController {
             self.cleanTextField()
             
             return
+            
+    }
+    /*
+    @IBAction func loginBtn(sender: UIButton) {
+        // キーボードを閉じる
+        closeKeyboad()
+        
+        // 入力確認
+        if self.userNameTextField.text!.isEmpty || self.passwordTextField.text!.isEmpty {
+            self.errorLabel.text = "未入力の項目があります"
+            // TextFieldを空に
+            self.cleanTextField()
+            
+            return
 
     }
+ */
         
         // ユーザー名とパスワードでログイン
         NCMBUser.logInWithUsernameInBackground(self.userNameTextField.text, password: self.passwordTextField.text, block:{(user: NCMBUser?, error: NSError!) in
@@ -64,6 +79,18 @@ class LoginViewController: UIViewController {
     }
     
     // SignUp画面へ遷移
+    @IBAction func toSignUp(sender: UIButton) {
+        // TextFieldを空にする
+        cleanTextField()
+        // errorLabelを空に
+        cleanErrorLabel()
+        // キーボードを閉じる
+        closeKeyboad()
+        
+        self.performSegueWithIdentifier("loginToSignUp", sender: self)
+        
+    }
+/*
     @IBAction func toSignUp(sender: AnyObject) {
         // TextFieldを空にする
         cleanTextField()
@@ -75,12 +102,19 @@ class LoginViewController: UIViewController {
         self.performSegueWithIdentifier("loginToSignUp", sender: self)
         
     }
+ */
     
     // 背景タップするとキーボードを隠す
     @IBAction func tapScreen(sender: UITapGestureRecognizer) {
         self.view.endEditing(true)
         
     }
+/*
+    @IBAction func tapScreen(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+        
+    }
+ */
     
     // TextFieldを空にする
     func cleanTextField(){
