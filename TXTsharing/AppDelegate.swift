@@ -8,20 +8,32 @@
 
 import UIKit
 import CoreData
+import NCMB
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    //********** APIキーの設定 **********
+    let applicationkey = "2736f86f28c7a1b975f9b6a84a49df64561c30d75e63a067f6ccae24fee98396"
+    let clientkey      = "f77610a5a97cbf5ebcfdb83eae31724c2cff6a058718c6f426846f03b126729e"
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /*
+        //first launch
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var dic = ["firstlaunch": true]
+        defaults.registerDefaults(dic)
+        */
         
         let storyboard: UIStoryboard = self.grabStoryboard()
         if let window = window {
             window.rootViewController = storyboard.instantiateInitialViewController()!
         }
+        //********** SDKの初期化 **********
+        NCMB.setApplicationKey(applicationkey, clientKey: clientkey)
         //wrote from my fear that something might happen wrong
         return true
     }

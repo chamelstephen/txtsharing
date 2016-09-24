@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import NCMB
 
 class HomeViewController: UIViewController {
     
+    //
     @IBOutlet var profileimage: UIImageView!
     var namestring: String = ""
     @IBOutlet var nameLabel: UILabel!
@@ -21,6 +23,7 @@ class HomeViewController: UIViewController {
         
         self.navigationItem.title = "Home"
         
+        //
         profileimage.layer.borderWidth = 0.1
         profileimage.layer.masksToBounds = false
         profileimage.layer.borderColor = UIColor.blackColor().CGColor
@@ -46,5 +49,12 @@ class HomeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    // Logoutボタン押下時の処理
+    @IBAction func logoutBtn(sender: UIButton) {
+        NCMBUser.logOut()
+        self.dismissViewControllerAnimated(true, completion: nil)
+        print("ログアウトしました")
+        
+    }
 
 }
